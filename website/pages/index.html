@@ -2,11 +2,43 @@
 <html>
 
 <head>
-  <title>Index Page</title>
+  <title>What-Is-App Web</title>
+  <link rel="stylesheet" href="/website/styles/general.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <h1>The main page of the website</h1>
+  <a href="signup.html">Sign Up</a>
+  <a href="login.html">Log In</a>
+
+  <div class="container">
+    <h1>What-Is-App Web</h1>
+
+    <div class="content">
+      <div class="historyContainer">
+        <div id="historyDiv"></div>
+      </div>
+
+      <div id="messageDiv">
+        <div class="arranged">
+          <textarea id="messageTextarea"></textarea>
+          <button id="sendButton">
+            <img id="sendImg" src="/website/images/send.webp">
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="userDiv">
+      <div id="usernameDiv"></div>
+      <button id="logoutButton">Log Out</button>
+    </div>
+
+    <div id="warningDiv">Log in to start chattin'!</div>
+  </div>
+
+  <script type="module" src="index.js"></script>
 </body>
 
 </html>
