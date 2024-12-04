@@ -15,7 +15,6 @@ let userId = localStorage.getItem("userId");
 let userExists = false;
 if (userId != null) {
   userExists = await send("userExists", userId) as boolean;
-  localStorage.removeItem("userId");
 }
 
 if (userExists) {
@@ -26,6 +25,7 @@ if (userExists) {
   usernameDiv.innerText = "Logged In as " + username;
 }
 else {
+  localStorage.removeItem("userId");
   warningDiv.style.display = "block";
 }
 
